@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+  }
+  
+  .welcome {
+  margin: 10px 0;
+  font-size: 3rem; /* Adjust the
+  size as needed */
+  font-weight: bold;
+  text-align: center;
+  background-image: url("https://wallpapers-clan.com/wp-content/uploads/2024/08/dbz-goku-clouds-background-wallpaper-desktop-wallpaper-preview.jpg");
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+  }
+  
+  header img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f0c040;
+  }
+  
+  .hero {
+    background-image: url('https://wallpapers.com/images/hd/best-car-u3q99vj3e2nu0ecs.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: colorChange 3s infinite;
+  }
+  
+  .hero a {
+    text-decoration: none;
+    background-color: #f0c040;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .hero a:hover {
+    background-color: #ffc107;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #f0c040; /* Yellow */
+    }
+    33% {
+      color: #ff5733; /* Orange */
+    }
+    66% {
+      color: #33d9b2; /* Green */
+    }
+    100% {
+      color: #f0c040; /* Back to Yellow */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    header {
+      padding: 10px 20px;
+    }
+  
+    nav ul {
+      gap: 10px;
+    }
+  }
+  /* Scroll Section Styling */
+  .scroll-section {
+    background-image: url('https://f1rstmotors.com/_next/image?url=https%3A%2F%2Ff1rst-motors.s3.me-central-1.amazonaws.com%2Fblog%2F1721735153034-blob&w=3840&q=100');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .scroll-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .scroll-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .scroll-section .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .scroll-section .btn {
+    text-decoration: none;
+    background-color: #f0c040;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-section .btn:hover {
+    background-color: #ffc107;
+  }
+  
+  .scroll-section::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    animation: scrollDown 1.5s infinite;
+  }
+  
+  @keyframes scrollDown {
+    0% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(10px);
+    }
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .scroll-section h1 {
+      font-size: 3rem;
+    }
+  
+    .scroll-section p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Merchandise Section - Full Screen */
+  .merchandise-section {
+    background-image: url('https://www.indiaretailing.com/wp-content/uploads/2023/11/Bugatti.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .merchandise-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .merchandise-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .merchandise-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%; /* Ensures items span the width */
+    max-width: 1200px; /* Center alignment for wide screens */
+  }
+  
+  .merch-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .merch-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .merch-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .merch-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .merch-item p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .merch-item .btn {
+    text-decoration: none;
+    background-color: #f0c040;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .merch-item .btn:hover {
+    background-color: #ffc107;
+  }
+  
+  @media (max-width: 768px) {
+    .merchandise-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .merchandise-content p {
+      font-size: 1rem;
+    }
+  
+    .merchandise-items {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  /* Footer / Contact Section */
+  .footer-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #f0c040;
+  }
+  
+  .footer-column p,
+  .footer-column ul {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .footer-column ul li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0c040;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #ffc107;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-column {
+      min-width: unset;
+    }
+  
+    .social-icons a {
+      margin: 0 10px;
+    }
+  }
